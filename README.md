@@ -1,4 +1,4 @@
-# Web-based-Terminal-Emulator
+# Web-based Terminal Emulator
 ![image](https://github.com/Javelinblog/Web-based-Terminal-Emulator/assets/155771659/c86a0183-e027-4cba-a99e-ff0a4b3c3a49)
 
 This web-based terminal emulator provides a user-friendly interface for executing commands via a web browser. With its simple yet secure password protection mechanism, users can access the terminal remotely and execute commands seamlessly. Whether you're managing a server, performing administrative tasks, or simply exploring command-line operations, this tool offers a convenient solution accessible from anywhere with internet connectivity.
