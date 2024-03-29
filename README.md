@@ -1,7 +1,7 @@
 # Web-based-Terminal-Emulator
 This web-based terminal emulator provides a user-friendly interface for executing commands via a web browser. With its simple yet secure password protection mechanism, users can access the terminal remotely and execute commands seamlessly. Whether you're managing a server, performing administrative tasks, or simply exploring command-line operations, this tool offers a convenient solution accessible from anywhere with internet connectivity.
 
-#Features:
+# Features:
 
 **Password Protection: Ensure security with a password prompt, safeguarding access to the terminal.
 **Command Execution: Execute commands directly within the web interface, with support for both Windows and Unix-based systems.
