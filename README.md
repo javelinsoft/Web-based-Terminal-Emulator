@@ -3,10 +3,10 @@ This web-based terminal emulator provides a user-friendly interface for executin
 
 #Features:
 
-    Password Protection: Ensure security with a password prompt, safeguarding access to the terminal.
-    Command Execution: Execute commands directly within the web interface, with support for both Windows and Unix-based systems.
-    User-Friendly Interface: Enjoy a clean and intuitive terminal interface, complete with input and output sections for seamless interaction.
-    Styling: Enhance readability and aesthetics with a sleek, dark-themed design.
+**Password Protection: Ensure security with a password prompt, safeguarding access to the terminal.
+**Command Execution: Execute commands directly within the web interface, with support for both Windows and Unix-based systems.
+**User-Friendly Interface: Enjoy a clean and intuitive terminal interface, complete with input and output sections for seamless interaction.
+**Styling: Enhance readability and aesthetics with a sleek, dark-themed design.
 
 You can find the source code for this project on GitHub, where contributions are welcome. If you encounter any issues, have suggestions for improvements, or wish to contribute to its development, feel free to submit a pull request or open an issue.
 
