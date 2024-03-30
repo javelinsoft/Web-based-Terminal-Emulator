@@ -10,6 +10,14 @@ This web-based terminal emulator provides a user-friendly interface for executin
 \- **User-Friendly Interface:** Enjoy a clean and intuitive terminal interface, complete with input and output sections for seamless interaction.  
 \- **Styling:** Enhance readability and aesthetics with a sleek, dark-themed design.  
 
+# To set your own password:
+
+Choose a password.  
+Convert it to an MD5 hash using an online MD5 hash generator or a programming language.  
+Replace the existing MD5 hash in the PHP code with your generated hash.  
+
+The default password provided in the code is "123", with its MD5 hash being "202cb962ac59075b964b07152d234b70". However, it's safer to use a unique, strong password of your own.
+
 You can find the source code for this project on GitHub, where contributions are welcome. If you encounter any issues, have suggestions for improvements, or wish to contribute to its development, feel free to submit a pull request or open an issue.
 
 
