@@ -12,9 +12,9 @@ This web-based terminal emulator provides a user-friendly interface for executin
 
 # To set your own password:
 
-\- **1.**Choose a password.  
-\- **2.**Convert it to an MD5 hash using an online MD5 hash generator or a programming language.  
-\- **3.**Replace the existing MD5 hash in the PHP code with your generated hash.  
+\- **1.** Choose a password.  
+\- **2.** Convert it to an MD5 hash using an online MD5 hash generator or a programming language.  
+\- **3.** Replace the existing MD5 hash in the PHP code with your generated hash.  
 
 The default password provided in the code is "123", with its MD5 hash being "202cb962ac59075b964b07152d234b70". However, it's safer to use a unique, strong password of your own.
 
