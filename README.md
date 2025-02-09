@@ -18,7 +18,4 @@ This web-based terminal emulator provides a user-friendly interface for executin
 
 The default password provided in the code is "123", with its MD5 hash being "202cb962ac59075b964b07152d234b70". However, it's safer to use a unique, strong password of your own.
 
-You can find the source code for this project on GitHub, where contributions are welcome. If you encounter any issues, have suggestions for improvements, or wish to contribute to its development, feel free to submit a pull request or open an issue.
-
-
-Experience the convenience of managing your system tasks through this web-based terminal emulator. Happy coding!
+If you encounter any issues, have suggestions for improvements, or wish to contribute to its development, feel free to submit a pull request or open an issue.
